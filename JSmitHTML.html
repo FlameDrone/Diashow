@@ -31,8 +31,8 @@
             var x = Math.floor(Math.random() * 5)
             var songs = ["Sax.mp3","DOREMI.mp3","Lady.mp3","HeyYa.mp3","Megalovania.mp3"]
             var audio = document.getElementById("audio")
-            audio.setAttribute('src', songs[x])
             audio.pause()
+            audio.setAttribute('src', songs[x])
             audio.load()
             audio.play()
         </script>
