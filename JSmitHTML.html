@@ -21,7 +21,7 @@
             
             var x = Math.floor(Math.random() * 5)
             var songs = ["Sax.mp3","DOREMI.mp3","Lady.mp3","Heya.mp3","Mega.mp3"]
-            var audio = document.getElementsByTagName("source")
+            var audio = document.getElementById("audio")
             audio[0].src = songs[x]
 
         </script>
@@ -32,6 +32,6 @@
         <p style="font-size:20px"><big>Now lets begin:</big></p>
         <p style="font-size:20px"><big><hr></big></p>
         <p><img src = "Weiß.png" height="50%" width = "30%"/></p>
-        <audio controls autoplay loop><source src = "" type="audio/mpeg">Audio is not suported</audio>
+        <audio id="audio" controls autoplay loop><source src = "" type="audio/mpeg">Audio is not suported</audio>
     </body>
 </html>
