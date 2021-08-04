@@ -23,6 +23,7 @@
             var songs = ["Sax.mp3","DOREMI.mp3","Lady.mp3","Heya.mp3","Mega.mp3"]
             var audio = document.getElementById("audio")
             audio.setAttribute('src', songs[x])
+            audio.load()
             audio.play()
 
         </script>
