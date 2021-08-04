@@ -18,15 +18,6 @@
                 x++
             }
             setInterval(change_img,3000)
-            
-            var x = Math.floor(Math.random() * 5)
-            var songs = ["Sax.mp3","DOREMI.mp3","Lady.mp3","HeyYa.mp3","Megalovania.mp3"]
-            var audio = document.getElementById("audio")
-            audio.setAttribute('src', songs[x])
-            audio.pause()
-            audio.load()
-            audio.play()
-
         </script>
         <p style="font-size:20px"><big>Welcome to my diashow!</big></p>
         <p style="font-size:20px"><big>This was created with a bit of HTML and JS.</big></p>
@@ -36,5 +27,14 @@
         <p style="font-size:20px"><big><hr></big></p>
         <p><img src = "Weiß.png" height="50%" width = "30%"/></p>
         <audio id="audio" controls autoplay loop><source src = "" type="audio/mpeg">Audio is not suported</audio>
+        <script>
+            var x = Math.floor(Math.random() * 5)
+            var songs = ["Sax.mp3","DOREMI.mp3","Lady.mp3","HeyYa.mp3","Megalovania.mp3"]
+            var audio = document.getElementById("audio")
+            audio.setAttribute('src', songs[x])
+            audio.pause()
+            audio.load()
+            audio.play()
+        </script>
     </body>
 </html>
