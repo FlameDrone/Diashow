@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Javascript with html</title>
+    </head>
+    <body align="center">
+        <article id="display">
+        <p style="font-size:20px">"<big>Hello,</big></p>
+        </article>
+        <script>
+            var field = document.getElementById("display")
+            var name = prompt("Whats your name?")
+            field.innerHTML = "<p style=\"font-size:20px\"><big>Hello "+name+",</big></p>"
+            var x = 0
+            var arr = ["Wee.JPG","Bored.png","Gunstolfo.png","Cute.png","Cry.png","Kanna.png"]
+            function change_img(){
+                var imgs = document.getElementsByTagName("img")
+                imgs[0].src = arr[x%arr.length]
+                x++
+            }
+            setInterval(change_img,3000)
+            
+
+        </script>
+        <p style="font-size:20px"><big>Welcome to my diashow!</big></p>
+        <p style="font-size:20px"><big>This was created with a bit of HTML and JS.</big></p>
+        <p style="font-size:20px"><big>I hope you enjoy it.</big></p>
+        <p style="font-size:50px"><big>😀</big></p>
+        <p style="font-size:20px"><big>Now lets begin:</big></p>
+        <p style="font-size:20px"><big><hr></big></p>
+        <p><img src = "Weiß.png" height="50%" width = "30%"/></p>
+    </body>
+</html>
